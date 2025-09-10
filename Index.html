@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <!-- This links to the CSS file that makes our page look pretty -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1> Interactive Web Page Assignment</h1>
+    <!-- A button that changes the page from light to dark and back -->
+    <button id="themeToggle">Dark/Light Mode</button>
+  </header>
+
+  <main>
+    <!-- Counter Section -->
+    <section class="card">
+      <h2> Counter Game</h2>
+      <!-- This shows the number -->
+      <p id="countDisplay">0</p>
+      <!-- Buttons to add to the number or reset it back to 0 -->
+      <button id="incrementBtn">➕ Increment</button>
+      <button id="resetBtn">🔄 Reset</button>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="card">
+      <h2>❓ FAQ</h2>
+      <!-- Clicking the question shows or hides the answer -->
+      <div class="faq-item">
+        <h3 class="faq-question">What is JavaScript?</h3>
+        <p class="faq-answer">JavaScript is a programming language that makes web pages interactive!</p>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">What is DOM?</h3>
+        <p class="faq-answer">DOM stands for Document Object Model — it represents the page structure in memory.</p>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="card">
+      <h2> Sign Up Form</h2>
+      <!-- This is the form where the user types info -->
+      <form id="signupForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <small class="error" id="nameError"></small>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email">
+        <small class="error" id="emailError"></small>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password">
+        <small class="error" id="passwordError"></small>
+
+        <button type="submit">Submit</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- This links to our JavaScript file that makes the page interactive -->
+  <script src="script.js"></script>
+</body>
+</html>
